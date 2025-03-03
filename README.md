@@ -28,6 +28,8 @@ app.UseCors("AllowSpecificOrigin");
 ```
 где "http://localhost:5173" - адрес dev сборки, "http://localhost:8080" - адрес nginx для прода
 
+Измененный файл в AzureSignalRService/Program.cs
+
 Если тестовое задание включало обход CORS только на фронте, расскажите, пожалуйста, как вы это делаете. Спасибо.
 
 ## Установка
