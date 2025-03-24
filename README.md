@@ -5,8 +5,7 @@
 
 ## Особенности
 
-К сожалению мне не удалось обхитрить CORS только на стороне фронтенда.
-В связи с чем мне пришлось немного изменить файл Program.cs https://github.com/NickSuomi/AzureSignalRService прописав в нем AllowSpecificOrigin
+Для обхода CORSнеобходимо немного изменить файл Program.cs https://github.com/NickSuomi/AzureSignalRService прописав в нем AllowSpecificOrigin
 
 ```
 var app = builder.Build();
@@ -30,10 +29,8 @@ app.UseCors("AllowSpecificOrigin");
 
 Измененный файл в AzureSignalRService/Program.cs
 
-Если тестовое задание включало обход CORS только на фронте, расскажите, пожалуйста, как вы это делаете. Спасибо.
-
 ## Установка
-Для корректной сборки зависимостей, а именно https://www.npmjs.com/package/@microsoft/signalr, должна быть установлена Node.js не ниже 20 версии.
+Для корректной сборки зависимостей, а именно https://www.npmjs.com/package/@microsoft/signalr, должна использоваться Node.js не ниже 20 версии.
 
 ### Dev
 npm i
